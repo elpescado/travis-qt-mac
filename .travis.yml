@@ -1,0 +1,16 @@
+language: cpp
+os: osx
+
+osx_image:
+  - xcode6.4
+  - xcode7.3
+  - xcode8
+  - xcode8.3
+  - xcode9
+
+script:
+  - sw_vers
+  - brew info qt
+  - brew update
+  - brew install qt
+  - $(brew --prefix qt)/bin/qmake --version
