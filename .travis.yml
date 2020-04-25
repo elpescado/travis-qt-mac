@@ -11,5 +11,5 @@ osx_image:
 script:
   - sw_vers
   - brew info qt5
-  - brew install qt5
+  - HOMEBREW_NO_AUTO_UPDATE=1 brew install qt5
   - $(brew --prefix qt5)/bin/qmake --version
